@@ -10,17 +10,6 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class Doctors(models.Model):
-    available = models.CharField(max_length=1)
-    name = models.CharField(max_length=100)
-    speciality = models.CharField(max_length=500)
-    currentlocation = models.IntegerField()
-    password = models.CharField(max_length=50)
-    username = models.CharField(max_length=50)
-
-    class Meta:
-        managed = False
-        db_table = 'doctors'
 
 
 class Equipments(models.Model):
@@ -31,6 +20,7 @@ class Equipments(models.Model):
         db_table = 'equipments'
 
 
+
 class Equipmentsavailable(models.Model):
     equipment = models.ForeignKey(Equipments, models.DO_NOTHING, db_column='equipment')
     hospital = models.ForeignKey('Hospitals', models.DO_NOTHING, db_column='hospital')
@@ -39,6 +29,18 @@ class Equipmentsavailable(models.Model):
     class Meta:
         managed = False
         db_table = 'equipmentsavailable'
+
+class Doctors(models.Model):
+    available = models.CharField(max_length=1)
+    name = models.CharField(max_length=100)
+    speciality = models.CharField(max_length=500)
+    password = models.CharField(max_length=50)
+    username = models.CharField(max_length=50)
+
+    class Meta:
+        managed = False
+        db_table = 'doctors'
+
 
 
 class Hospitals(models.Model):

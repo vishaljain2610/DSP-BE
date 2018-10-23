@@ -21,12 +21,12 @@ import os,subprocess
 from django.conf import settings
 from django.template import RequestContext
 from django.core.mail import EmailMessage, send_mail
-#import docx
+import docx
 from docx import *
-from docx.enum.section import WD_ORIENT
-from docx.shared import Inches, Pt
-from docx.enum.table import *
-from docx.enum.text import *
+# from docx.enum.section import WD_ORIENT
+# from docx.shared import Inches, Pt
+# from docx.enum.table import *
+# from docx.enum.text import *
 import zipfile
 import StringIO
 from django.db.models import Sum

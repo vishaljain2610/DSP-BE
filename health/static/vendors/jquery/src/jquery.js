@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 define( [
 	"./core",
 	"./selector",
@@ -36,42 +35,3 @@ define( [
 return ( window.jQuery = window.$ = jQuery );
 
 } );
-=======
-define( [
-	"./core",
-	"./selector",
-	"./traversing",
-	"./callbacks",
-	"./deferred",
-	"./core/ready",
-	"./data",
-	"./queue",
-	"./queue/delay",
-	"./attributes",
-	"./event",
-	"./event/alias",
-	"./event/focusin",
-	"./manipulation",
-	"./manipulation/_evalUrl",
-	"./wrap",
-	"./css",
-	"./css/hiddenVisibleSelectors",
-	"./serialize",
-	"./ajax",
-	"./ajax/xhr",
-	"./ajax/script",
-	"./ajax/jsonp",
-	"./ajax/load",
-	"./event/ajax",
-	"./effects",
-	"./effects/animatedSelector",
-	"./offset",
-	"./dimensions",
-	"./deprecated",
-	"./exports/amd"
-], function( jQuery ) {
-
-return ( window.jQuery = window.$ = jQuery );
-
-} );
->>>>>>> 5f91f3411245b1d3d2d998dbedeb8154265a24fb

@@ -13,7 +13,7 @@ SECRET_KEY = '-w6oxp_%r0%)65)$=eg61fzx3ytk(w3&f$xj*vs)u#r&a%0gr^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.219','localhost','172.20.10.4']
+ALLOWED_HOSTS = ['192.168.43.219','localhost','172.20.10.4','127.0.0.1']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'getmeliv_healthcare',
-        'PASSWORD':'hcare@123',
-        'USER':'getmeliv_hcare',
+        'PASSWORD':'',
+        'USER':'root',
         'HOST':'localhost',
         'PORT':'3306',
     }
